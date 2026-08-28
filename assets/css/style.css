@@ -184,19 +184,19 @@
     font-family:var(--font-display);font-size:clamp(1.9rem,3.6vw,2.7rem);
     margin:0;color:var(--steel-100);text-wrap:balance;font-weight:400;
   }
-  .section-desc{color:var(--steel-300);margin-top:14px;font-size:1.02rem;max-width:60ch;}
+  .section-desc{color:var(--steel-300);margin-top:14px;font-size:1.02rem;max-width:60ch;text-align:justify;}
 
   .alt-bg{background:var(--graphite-900);}
 
   /* ---------- about ---------- */
   .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start;}
   @media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:32px;}}
-  .about-body p{color:var(--steel-200);font-size:1.03rem;margin:0 0 18px;text-wrap:pretty;}
+  .about-body p{color:var(--steel-200);font-size:1.03rem;margin:0 0 18px;text-wrap:pretty;text-align:justify;}
   .about-body strong{color:var(--amber-300);font-weight:700;}
   .pull-quote{
     border-inline-start:3px solid var(--amber-500);
     padding-inline-start:20px;margin:28px 0;color:var(--steel-100);
-    font-size:1.12rem;font-weight:500;
+    font-size:1.12rem;font-weight:500;text-align:justify;
   }
   .domain-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
   .domain-tag{
@@ -317,7 +317,7 @@
     background:var(--amber-500);padding:8px 16px;border-radius:2px;margin-bottom:20px;
   }
   .cert-copy h3{font-family:var(--font-display);font-weight:400;font-size:1.5rem;margin:0 0 14px;}
-  .cert-copy p{color:var(--steel-300);font-size:0.96rem;margin:0 0 12px;}
+  .cert-copy p{color:var(--steel-300);font-size:0.96rem;margin:0 0 12px;text-align:justify;}
   .cert-list{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;}
   .cert-list li{display:flex;gap:10px;font-size:0.92rem;color:var(--steel-200);font-family:var(--font-body);}
   .cert-list li b{color:var(--amber-300);font-weight:700;flex:none;white-space:nowrap;}
@@ -347,7 +347,7 @@
     border:1px solid var(--graphite-700);border-radius:4px;padding:clamp(28px,4vw,44px);
   }
   .cta-box h3{font-family:var(--font-display);font-size:1.7rem;font-weight:400;margin:0 0 14px;}
-  .cta-box p{color:var(--steel-300);margin:0 0 26px;font-size:0.98rem;}
+  .cta-box p{color:var(--steel-300);margin:0 0 26px;font-size:0.98rem;text-align:justify;}
   @media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
 
   /* ---------- footer ---------- */
