@@ -131,6 +131,7 @@
     transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
     border:1px solid transparent;
   }
+  .btn svg{width:17px;height:17px;flex:none;}
   .btn-primary{background:var(--amber-500);color:var(--graphite-950);}
   .btn-primary:hover{background:var(--amber-300);transform:translateY(-1px);box-shadow:0 8px 24px rgba(240,168,0,0.25);}
   .btn-ghost{border-color:var(--graphite-600);color:var(--steel-100);}
