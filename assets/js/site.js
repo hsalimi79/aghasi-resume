@@ -126,3 +126,14 @@
     });
   }
 })();
+
+// image loading: fade in once loaded (weak-network friendly); never leave images hidden
+(function(){
+  var imgs = document.querySelectorAll('.g-item img, .letter-frame img, .cert-panel img');
+  function ok(i){ i.classList.add('loaded'); }
+  imgs.forEach(function(i){
+    if(i.complete && i.naturalWidth){ ok(i); }
+    else { i.addEventListener('load', function(){ ok(i); }); i.addEventListener('error', function(){ ok(i); }); }
+  });
+  setTimeout(function(){ imgs.forEach(ok); }, 8000);
+})();

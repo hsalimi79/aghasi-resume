@@ -474,3 +474,16 @@ header.site-nav{background:rgba(10,10,10,0.85);}
   section{padding:70px 0;}
   .services-grid .service-card{padding:36px 28px;}
 }
+
+/* ---------- image loading: placeholder shimmer + fade-in (weak network) ---------- */
+.g-item,.letter-frame{background-color:var(--graphite-850);}
+.g-item::before,.letter-frame::before{content:"";position:absolute;inset:0;z-index:0;
+  background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.06) 50%,transparent 70%);
+  background-size:200% 100%;animation:imgShimmer 1.4s linear infinite;}
+@keyframes imgShimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+.g-item img,.letter-frame img{position:relative;z-index:1;}
+.js .g-item img,.js .letter-frame img,.js .cert-panel img{opacity:0;transition:opacity .5s ease, transform .5s cubic-bezier(.2,.7,.3,1), filter .4s;}
+.js .g-item img.loaded,.js .letter-frame img.loaded,.js .cert-panel img.loaded{opacity:1;}
+.g-item:has(img.loaded)::before,.letter-frame:has(img.loaded)::before{display:none;}
+.gallery-grid.masonry .g-item{min-height:140px;}
+@media (prefers-reduced-motion:reduce){.g-item::before,.letter-frame::before{animation:none}}
