@@ -487,3 +487,5 @@ header.site-nav{background:rgba(10,10,10,0.85);}
 .g-item:has(img.loaded)::before,.letter-frame:has(img.loaded)::before{display:none;}
 .gallery-grid.masonry .g-item{min-height:140px;}
 @media (prefers-reduced-motion:reduce){.g-item::before,.letter-frame::before{animation:none}}
+
+@media (max-width:800px){#heroPhoto{background-image:url(../img/hero-m.webp)!important;}}
